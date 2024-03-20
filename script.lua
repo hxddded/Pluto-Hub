@@ -1,5 +1,5 @@
 if _G.PlutoLoader then
-	return print("🎉 Pluto is loaded! 🎉")
+	return
 end
 
 -- Instances:
@@ -186,37 +186,33 @@ local function pluto_scripts()
 		
 		if txtbox.Text == "inf" then
 			print("🎉 Infinite Yield is executed successfully!🎉")
-			loadstring('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source', true)()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	     	end
 		
 		if txtbox.Text == "iy" then
 			print("🎉 Infinite Yield ( ALIAS ) is executed successfully!🎉")
-			loadstring('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source', true)()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 			
 		if txtbox.Text == "flygui" then
 				print("🎉 Fly Gui is executed successfully!🎉")
-				loadstring('https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt', true)()
+				loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
 	        end
 
 		if txtbox.Text == "alyseehub" then
 				print("🎉 Alysee Hub is executed successfully!🎉")
-				loadstring('https://raw.githubusercontent.com/NathTheDev/AlysseAndroid/main/loader.lua', true)()
+				loadstring(game:HttpGet("https://raw.githubusercontent.com/NathTheDev/AlysseAndroid/main/loader.lua"))()
 			end
 			
 		if txtbox.Text == "alyseeArsenal" then
 				print("🎉 Alysee Arsenal is executed sucessfully! 🎉")
-				loadstring('https://raw.githubusercontent.com/NathTheDev/AlysseAndroid/main/arsenal-loader.lua', true)()
+				loadstring(game:HttpGet("https://raw.githubusercontent.com/NathTheDev/AlysseAndroid/main/arsenal-loader.lua"))()
 			end
 			
 		if txtbox.Text == "btools" then
 				print("🎉 BTools is executed successfully!🎉")
 				loadstring('https://cdn.wearedevs.net/scripts/BTools.txt', true)()
 			end
-			
-		if txtbox.Text == "btoolsV2" then
-				print("🎉 BTools V2 is executed successfully!🎉")
-				loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)()
-			end
+		
 
 		end
 		
